@@ -1,1 +1,32 @@
 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://raw.githubusercontent.com/ElenaR3/FOAF/main/foaf.ttl>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <https://raw.githubusercontent.com/ElenaR3/FOAF/main/foaf.ttl#me> ;
+  foaf:primaryTopic <https://raw.githubusercontent.com/ElenaR3/FOAF/main/foaf.ttl#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<https://raw.githubusercontent.com/ElenaR3/FOAF/main/foaf.ttl#me>
+  a foaf:Person ;
+  foaf:name "Elena Ridova" ;
+  foaf:title "Ms" ;
+  foaf:givenname "Elena" ;
+  foaf:family_name "Ridova" ;
+  foaf:nick "Elenche" ;
+  foaf:mbox_sha1sum "dd7b84f26a304a04ad30041e91311374f48ef5f0" ;
+  foaf:schoolHomepage <https://finki.ukim.mk/> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Filip" ;
+    foaf:mbox_sha1sum "2b801a9671c6d66f3c8aa242a7db75d2d71e9c4c" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/stavrovfilip/FOAF/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Sandra" ;
+    foaf:mbox_sha1sum "caef0f51d4e7571423978f5edb43343eb8333b55" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/StojanovskaS/WBS_foaf_profile/main/foaf.ttl?fbclid=IwAR0S3WFHEvY_FteyjalTayr4LUH5CqVe9gjWWcyRsQDz9utqn4x48AFtzR8>
+  ] .
